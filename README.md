@@ -30,4 +30,4 @@ X username: Đełta Žerö
 
 Email: hammadshakeel61@gmail.com
 
-[Đełta Žerö](https://chng.it/bmq6BrJmm7)
+[My petition for Change for a Universal Ai Emoji](https://chng.it/bmq6BrJmm7)
