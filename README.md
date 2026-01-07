@@ -5,6 +5,7 @@ AI Ops enthusiast & passionate programmer blending intelligence with code.
 Skilled in **C**, **Linux**, **C++**, **Python**, and **AI** systems—always exploring new boundaries in automation and analytics.
 
 ## 🛠️ Skills
+- **Linux:** Kali, Ubuntu, Arch....
 - **Programming:** C, C++, Python
 - **AI & ML:** Building, deploying, and optimizing intelligent systems
 - **Automation:** AI Ops, workflow orchestration, and system reliability
