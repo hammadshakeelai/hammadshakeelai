@@ -2,13 +2,23 @@
 
 ## 🚀 About Me
 AI Ops enthusiast & passionate programmer blending intelligence with code.  
-Skilled in **C**, **Linux**, **C++**, **Python**, and **AI** systems—always exploring new boundaries in automation and analytics.
+Skilled in **C**, **Linux**, **C++**, **Python**, **Html/CSS/JS**, and **AI** systems—always exploring new boundaries in automation and analytics.
 
 ## 🛠️ Skills
 - **Linux:** Kali, Ubuntu, Arch....
-- **Programming:** C, C++, Python
+- **Programming:** C, C++, Python, Html/CSS/JS
 - **AI & ML:** Building, deploying, and optimizing intelligent systems
 - **Automation:** AI Ops, workflow orchestration, and system reliability
+
+## Interests
+- AI / Machine-Learning / Deep-Learning / Natural-Language-Processing / Computer-Vision
+- Linux (mainly Arch + terminal stuff)
+- C++
+- LeetCode
+- Cunning Algorithms (error correcting, bellman ford...)
+- Python Problem Solving
+- Dynamic Programming
+- Branchless Programming
 
 ## 🎾 Outside of Code
 When I'm not coding, you'll find me:
