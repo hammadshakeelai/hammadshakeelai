@@ -2,7 +2,7 @@
 
 ## 🚀 About Me
 AI Ops enthusiast & passionate programmer blending intelligence with code.  
-Skilled in **C**, **Linux**, **C++**, **Python**, **Html/CSS/JS**, and **AI** systems—always exploring new boundaries in automation and analytics.
+Skilled in **C**, **Linux**, **C++**, **Python**, **Html/CSS/JS**, and **AI** systems always exploring new things in automation and analytics.
 
 ## 🛠️ Skills
 - **Linux:** Kali, Ubuntu, Arch....
