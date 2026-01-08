@@ -1,4 +1,4 @@
-# Hi, I'm Muhammad Hammad Shakeel (hammadshakeelai) 👋
+# Hi, I'm Muhammad Hammad Shakeel 👋
 
 ## 🚀 About Me
 AI Ops enthusiast & passionate programmer blending intelligence with code.  
@@ -15,7 +15,7 @@ Skilled in **C**, **Linux**, **C++**, **Python**, **Html/CSS/JS**, and **AI** sy
 - Linux (mainly Arch + terminal stuff)
 - C++
 - LeetCode
-- Cunning Algorithms (error correcting, bellman ford...)
+- Cunning Algorithms (error correcting, bellman ford)
 - Python Problem Solving
 - Dynamic Programming
 - Branchless Programming
@@ -30,7 +30,7 @@ When I'm not coding, you'll find me:
 - Making Fun New Projects 🛠️ 🚀 
 
 ## 💡 Motto
-> "My Flame was only an illusion; you got burned because you believed."
+> "My Flame was only an illusion; you got burned because you believed." ~Dalsim
 
 ## 📫 Connect
 Feel free to reach out or check out my work here on GitHub!
