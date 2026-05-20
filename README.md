@@ -29,6 +29,25 @@ When I'm not coding, you'll find me:
 - Learning New Things 💡
 - Making Fun New Projects 🛠️ 🚀 
 
+## 🔧 Featured Projects
+
+### [kaggle-run-skill](https://github.com/hammadshakeelai/kaggle-run-skill)
+> The most complete Kaggle slash command for AI coding agents.
+
+A Claude Code skill (`/kaggle-run`) combining full Kaggle platform integration with an automated notebook deployment pipeline:
+- Push any `.ipynb` to Kaggle with one command
+- **Auto-fix 11 common kernel errors** and retry (up to 10×)
+- **1%-test-first strategy**: 500-sample verification before full run
+- **55 badge automation** across 5 phases
+- **MCP server** — 66 Kaggle tools for AI agents
+- Works with Claude Code, Cursor, Gemini CLI, and 35+ agents
+
+```bash
+claude install-skill https://github.com/hammadshakeelai/kaggle-run-skill
+```
+
+---
+
 ## 💡 Motto
 > "My Flame was only an illusion; you got burned because you believed." ~Dalsim
 
