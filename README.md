@@ -61,6 +61,6 @@ Discord username: r_s_test001
 
 Email: hammadshakeel61@gmail.com
 
-Linkedln: [Muhammad Hammad Shakeel](www.linkedin.com/in/muhammad-hammad-shakeel-2905a0410)
+Linkedln: [Muhammad Hammad Shakeel](https://www.linkedin.com/in/muhammad-hammad-shakeel-2905a0410)
 
 [My petition for Change for a Universal Ai Emoji](https://chng.it/bmq6BrJmm7)
