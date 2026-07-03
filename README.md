@@ -3,6 +3,13 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:8A2BE2,50:4B0082,100:00FFFF&height=220&section=header&text=Muhammad%20Hammad%20Shakeel&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI%2FML%20Engineer%20%C2%B7%20Software%20Engineer%20%C2%B7%20LLM%20Builder%20%C2%B7%20Agentic%20AI%20%C2%B7%20Cybersecurity&descAlignY=58&descSize=16" alt="banner" />
 </p>
 
+<!-- Animated typing: skills I'm acquiring -->
+<p align="center">
+  <a href="https://github.com/hammadshakeelai">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00FFFF&center=true&vCenter=true&width=600&lines=Acquiring+skill...+%2B100+pts;AI%2FML+Engineer;LLM+Builder;Agentic+AI+Power+User;Software+Engineer;Cybersecurity+in+progress;Arch+Linux+%2B+terminal-first" alt="Typing SVG" />
+  </a>
+</p>
+
 # [Hi](https://script.google.com/macros/s/AKfycbw2MXUqZu0GcHVbyDatU3GjAvm2J7lWKI68-ceewY9kCLbCMRxC0DdfOUvBwUqRuE0/exec), I'm Muhammad Hammad Shakeel 👋
 
 > Learning in every realm possible.
@@ -30,6 +37,37 @@ Right now I'm:
 - **Programming:** Python, C, C++, TypeScript/JS, Dart, HTML/CSS
 - **Systems & Security:** Arch Linux, low-level/assembly, cybersecurity modeling
 - **Automation:** AI Ops, workflow orchestration, and reliable pipelines
+
+<!-- Skill badges — the dots Pac-Man is chomping -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C" />
+  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=archlinux&logoColor=white" alt="Arch Linux" />
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
+  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" />
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle" />
+  <img src="https://img.shields.io/badge/Claude_Code-D97757?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude Code" />
+</p>
+
+## 🕹️ Chomping Through Skills (Pac-Man Mode)
+Watch Pac-Man munch through my contribution graph, dodging ghosts and racking up points — one skill at a time. 🟡👾
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hammadshakeelai/hammadshakeelai/output/pacman-contribution-graph-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hammadshakeelai/hammadshakeelai/output/pacman-contribution-graph.svg" />
+    <img alt="Pac-Man contribution graph" src="https://raw.githubusercontent.com/hammadshakeelai/hammadshakeelai/output/pacman-contribution-graph.svg" />
+  </picture>
+</p>
 
 ## 🔭 Things I'm Building
 I keep a lot of projects going across many areas — AI/ML, LLM apps, agentic AI tooling, Claude Code skills,
