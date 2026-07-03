@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Hammad Shakeel logo: a white paw print inside a camera aperture ring on a green squircle">
+  <defs>
+    <linearGradient id="squircle" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#052e16"/>
+      <stop offset="0.55" stop-color="#065f46"/>
+      <stop offset="1" stop-color="#10b981"/>
+    </linearGradient>
+    <radialGradient id="sheen" cx="0.3" cy="0.24" r="0.85">
+      <stop offset="0" stop-color="#34d399" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#34d399" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="apertureHole">
+      <rect width="200" height="200" fill="white"/>
+      <circle cx="100" cy="100" r="34" fill="black"/>
+    </mask>
+  </defs>
+
+  <!-- Green squircle -->
+  <rect x="8" y="8" width="184" height="184" rx="52" fill="url(#squircle)"/>
+  <rect x="8" y="8" width="184" height="184" rx="52" fill="url(#sheen)"/>
+
+  <!-- Camera aperture ring (center masked open for the paw) -->
+  <g mask="url(#apertureHole)" fill="none" stroke="#ffffff" stroke-linecap="round">
+    <circle cx="100" cy="100" r="83" stroke-width="6" opacity="0.95"/>
+    <g stroke-width="5.5" opacity="0.9">
+      <line x1="119.25" y1="66.67" x2="167.08" y2="149.5"/>
+      <line x1="80.75" y1="66.67" x2="176.42" y2="66.67"/>
+      <line x1="61.5" y1="100" x2="109.33" y2="17.17"/>
+      <line x1="80.75" y1="133.33" x2="32.92" y2="50.5"/>
+      <line x1="119.25" y1="133.33" x2="23.58" y2="133.33"/>
+      <line x1="138.5" y1="100" x2="90.67" y2="182.83"/>
+    </g>
+  </g>
+
+  <!-- White paw print: "capture the world" motif -->
+  <g fill="#ffffff">
+    <ellipse cx="100" cy="113" rx="17" ry="13.5"/>
+    <ellipse cx="81" cy="94" rx="6.5" ry="8.5" transform="rotate(-18 81 94)"/>
+    <ellipse cx="92" cy="87" rx="6.8" ry="9" transform="rotate(-7 92 87)"/>
+    <ellipse cx="108" cy="87" rx="6.8" ry="9" transform="rotate(7 108 87)"/>
+    <ellipse cx="119" cy="94" rx="6.5" ry="8.5" transform="rotate(18 119 94)"/>
+  </g>
+</svg>

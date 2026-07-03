@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260" width="1000" height="260" role="img" aria-label="Hammad Shakeel — Builder of AI-agent tooling, scientific simulators, and full-stack apps">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#041f14"/>
+      <stop offset="0.5" stop-color="#065f46"/>
+      <stop offset="1" stop-color="#0b7a5a"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.15" cy="0.5" r="0.55">
+      <stop offset="0" stop-color="#34d399" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#34d399" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="apertureHoleB">
+      <rect width="200" height="200" fill="white"/>
+      <circle cx="100" cy="100" r="34" fill="black"/>
+    </mask>
+  </defs>
+
+  <rect width="1000" height="260" rx="24" fill="url(#bg)"/>
+  <rect width="1000" height="260" rx="24" fill="url(#halo)"/>
+
+  <!-- Aperture + paw mark -->
+  <g transform="translate(60,50) scale(0.8)">
+    <circle cx="100" cy="100" r="94" fill="#34d399" opacity="0.12">
+      <animate attributeName="opacity" values="0.08;0.22;0.08" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+    <g mask="url(#apertureHoleB)" fill="none" stroke="#ffffff" stroke-linecap="round">
+      <circle cx="100" cy="100" r="83" stroke-width="6" opacity="0.95"/>
+      <g stroke-width="5.5" opacity="0.9">
+        <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="60s" repeatCount="indefinite"/>
+        <line x1="119.25" y1="66.67" x2="167.08" y2="149.5"/>
+        <line x1="80.75" y1="66.67" x2="176.42" y2="66.67"/>
+        <line x1="61.5" y1="100" x2="109.33" y2="17.17"/>
+        <line x1="80.75" y1="133.33" x2="32.92" y2="50.5"/>
+        <line x1="119.25" y1="133.33" x2="23.58" y2="133.33"/>
+        <line x1="138.5" y1="100" x2="90.67" y2="182.83"/>
+      </g>
+    </g>
+    <g fill="#ffffff">
+      <ellipse cx="100" cy="113" rx="17" ry="13.5"/>
+      <ellipse cx="81" cy="94" rx="6.5" ry="8.5" transform="rotate(-18 81 94)"/>
+      <ellipse cx="92" cy="87" rx="6.8" ry="9" transform="rotate(-7 92 87)"/>
+      <ellipse cx="108" cy="87" rx="6.8" ry="9" transform="rotate(7 108 87)"/>
+      <ellipse cx="119" cy="94" rx="6.5" ry="8.5" transform="rotate(18 119 94)"/>
+    </g>
+  </g>
+
+  <!-- Text block -->
+  <text x="272" y="84" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" letter-spacing="4" font-weight="600" fill="#6ee7b7">AI · AGENTS · SIMULATIONS · FULL-STACK</text>
+  <text x="270" y="140" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="54" font-weight="800" fill="#ffffff">Hammad Shakeel</text>
+  <text x="272" y="176" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" fill="#a7f3d0">Builder of AI-agent tooling, scientific simulators, and full-stack apps.</text>
+  <line x1="272" y1="198" x2="720" y2="198" stroke="#34d399" stroke-opacity="0.35" stroke-width="2"/>
+  <text x="272" y="224" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" fill="#d1fae5">Claude Code skills · multi-agent workflows · Flutter · FastAPI · scientific simulators</text>
+</svg>
