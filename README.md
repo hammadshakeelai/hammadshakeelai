@@ -123,14 +123,16 @@ digital twins, security simulations, and developer tools.
 ## 📊 GitHub Activity
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=hammadshakeelai&show_icons=true&theme=tokyonight&hide_border=true" alt="Hammad's GitHub stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=hammadshakeelai&layout=compact&theme=tokyonight&hide_border=true" alt="Top languages" />
-</p>
-<p align="center">
   <img src="https://streak-stats.demolab.com/?user=hammadshakeelai&theme=tokyonight&hide_border=true" alt="GitHub streak" />
 </p>
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=hammadshakeelai&theme=tokyonight&no-frame=true" alt="GitHub trophies" />
+  <a href="https://github.com/hammadshakeelai?tab=followers">
+    <img src="https://img.shields.io/github/followers/hammadshakeelai?style=for-the-badge&logo=github&label=Followers&labelColor=181717&color=8A2BE2" alt="GitHub followers" />
+  </a>
+  <a href="https://github.com/hammadshakeelai?tab=repositories">
+    <img src="https://img.shields.io/badge/Repositories-50+-4B0082?style=for-the-badge&logo=github&logoColor=white" alt="Repositories" />
+  </a>
+  <img src="https://komarev.com/ghpvc/?username=hammadshakeelai&style=for-the-badge&color=00BFFF&label=Profile+Views" alt="Profile views" />
 </p>
 
 ## 🎾 Outside of Code
@@ -148,13 +150,10 @@ When I'm not coding, you'll find me:
 ## 📫 Connect
 Feel free to reach out or check out my work here on GitHub!
 
-- **Email:** hammadshakeel61@gmail.com
-- **LinkedIn:** [Muhammad Hammad Shakeel](https://www.linkedin.com/in/muhammad-hammad-shakeel-2905a0410)
-- **Kaggle:** [hammadshakeelai](https://www.kaggle.com/hammadshakeelai)
-- **Discord:** r_s_test001
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=hammadshakeelai&style=for-the-badge&color=8A2BE2" alt="Profile views" />
-</p>
+- [![Email](https://img.shields.io/badge/Email-hammadshakeel61@gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:hammadshakeel61@gmail.com)
+- [![LinkedIn](https://img.shields.io/badge/LinkedIn-Muhammad_Hammad_Shakeel-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammad-hammad-shakeel-2905a0410)
+- [![Kaggle](https://img.shields.io/badge/Kaggle-hammadshakeelai-20BEFF?style=flat-square&logo=kaggle&logoColor=white)](https://www.kaggle.com/hammadshakeelai)
+- [![GitHub](https://img.shields.io/badge/GitHub-hammadshakeelai-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/hammadshakeelai)
+- [![Discord](https://img.shields.io/badge/Discord-r__s__test001-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.com)
 
 [My petition for a Universal AI Emoji](https://chng.it/bmq6BrJmm7)
