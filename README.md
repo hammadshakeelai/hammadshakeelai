@@ -6,7 +6,7 @@
 <!-- Animated typing: skills I'm acquiring -->
 <p align="center">
   <a href="https://github.com/hammadshakeelai">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00FFFF&center=true&vCenter=true&width=600&lines=Acquiring+skill...+%2B100+pts;AI%2FML+Engineer;LLM+Builder;Agentic+AI+Power+User;Software+Engineer;Cybersecurity+in+progress;Arch+Linux+%2B+terminal-first" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00FFFF&center=true&vCenter=true&width=600&lines=Acquiring+skill...+%2B100+pts;AI%2FML+Engineer;LLM+Builder+in+progress;Agentic+AI+Power+User;Software+Engineer;Cybersecurity+in+progress;Arch+Linux+%2B+terminal-first" alt="Typing SVG" />
   </a>
 </p>
 
@@ -31,8 +31,8 @@
 I'm an **AI/ML engineer** and **software engineer** who lives at the intersection of intelligence and code.
 I build and ship real systems — from **LLM-powered apps** to full-stack products — and I'm always pushing into the next frontier.
 
-I bring a **strong agentic AI background** — I design, orchestrate, and ship with autonomous coding agents every single day,
-and I build agentic tooling of my own (skills, MCP servers, and multi-agent workflows).
+I bring a **strong agentic AI background** — I design, orchestrate, and ship with autonomous coding agents every single day, using many many different agentic system's
+and I build agentic tooling of my own (skills, MCP servers, and multi-agent workflows) developing code and prroduct using agentic software engineering processes that produce utmost best product and avoiding ai slop.
 
 Right now I'm:
 - 🤖 Building **AI/ML** systems and **developing LLMs** end to end
