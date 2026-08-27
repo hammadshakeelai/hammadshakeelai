@@ -90,7 +90,7 @@ Watch Pac-Man munch through my contribution graph, dodging ghosts and racking up
 
 ## 🚀 Featured Projects
 I keep a lot of projects going across AI/ML, LLM apps, agentic AI tooling, Claude Code skills, scientific & medical
-digital twins, security simulations, and developer tools.
+digital twins, assembly language, security simulations, and developer tools.
 👉 **Explore it all on my [GitHub repositories](https://github.com/hammadshakeelai?tab=repositories)** (50+ and counting).
 
 > ⭐ **Flagship — [kaggle-run-skill](https://github.com/hammadshakeelai/kaggle-run-skill):** the most complete Kaggle slash command for AI coding agents — deploy notebooks, auto-fix errors, submit competitions, 55-badge automation, and an MCP server.
