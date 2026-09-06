@@ -1,0 +1,474 @@
+[
+  {
+    "id": "agentic-ai-megaproject-template",
+    "title": "Agentic Project Template",
+    "url": "https://github.com/hammadshakeelai/agentic-ai-megaproject-template",
+    "tags": ["Python", "AI agents", "Architecture", "Python", "Tools"],
+    "text": "Topic-agnostic starter template for building super-large software projects with AI agents: phase-gated lifecycle, state-file memory, traceability chain, work packets, adversarial ADRs, and CI gates. Source repository."
+  },
+  {
+    "id": "ai--testt",
+    "title": "ai--testt",
+    "url": "https://github.com/hammadshakeelai/ai--testt",
+    "tags": ["Jupyter Notebook"],
+    "text": "t Source repository."
+  },
+  {
+    "id": "ai-stack",
+    "title": "AI Stack",
+    "url": "https://github.com/hammadshakeelai/ai-stack",
+    "tags": ["PowerShell", "AI"],
+    "text": "A local assistant stack with a model gateway and provider failover. Explore the architecture and configuration in the repository. Source repository."
+  },
+  {
+    "id": "ai_lab_work",
+    "title": "AI_LAB_WORK",
+    "url": "https://github.com/hammadshakeelai/AI_LAB_WORK",
+    "tags": ["Jupyter Notebook"],
+    "text": "Public project archive. Source repository."
+  },
+  {
+    "id": "al-machine-learning-deep-learning-",
+    "title": "AL-machine-learning-deep-learning-",
+    "url": "https://github.com/hammadshakeelai/AL-machine-learning-deep-learning-",
+    "tags": ["Jupyter Notebook"],
+    "text": "machine learning and deep learning codes Source repository."
+  },
+  {
+    "id": "algorithms-visualizer",
+    "title": "AlgoViz",
+    "url": "https://github.com/hammadshakeelai/algorithms-visualizer",
+    "tags": [
+      "Algorithms",
+      "JavaScript",
+      "Visualization",
+      "JavaScript",
+      "Simulations"
+    ],
+    "text": "Watch an algorithm think. Step through sorting, searching, graphs, and data structures at your own pace. Presentation: live. A collection of interactive algorithm and data-structure visualizations. A final sorted list hides the comparisons, swaps, and intermediate states that explain an algorithm. Vanilla JavaScript modules separate algorithm behavior from the interface. Playback turns intermediate states into something visitors can follow. A public visual playground spanning sorting, searching, graph algorithms, and data structures. Visual examples teach behavior; browser animation timings are not reliable algorithm benchmarks."
+  },
+  {
+    "id": "api-and-sql",
+    "title": "API-and-SQL",
+    "url": "https://github.com/hammadshakeelai/API-and-SQL",
+    "tags": ["C++"],
+    "text": "Public project archive. Source repository."
+  },
+  {
+    "id": "asmbook",
+    "title": "ASMBOOK",
+    "url": "https://github.com/hammadshakeelai/ASMBOOK",
+    "tags": ["Assembly", "TypeScript", "Education", "HTML", "Tools"],
+    "text": "A notebook that lets you look inside the machine. Write 8086 assembly, inspect the CPU, and follow every instruction. Presentation: live. An interactive assembly notebook with lessons and an inspectable CPU. Assembly becomes easier to reason about when instructions, registers, and execution can be examined together. Preact and TypeScript organize the notebook interface. Browser emulation and execution views bring the low-level program into an accessible environment. A deployed browser notebook visitors can explore without installing a local assembly toolchain. An educational environment; emulator and lesson behavior should be evaluated for the particular instruction being studied."
+  },
+  {
+    "id": "assembly-language-codes",
+    "title": "Assembly-Language-Codes",
+    "url": "https://github.com/hammadshakeelai/Assembly-Language-Codes",
+    "tags": ["Jupyter Notebook"],
+    "text": "Public project archive. Source repository."
+  },
+  {
+    "id": "assembly-language-dry-running-tool-project",
+    "title": "Assembly Dry Runner",
+    "url": "https://github.com/hammadshakeelai/Assembly-Language-Dry-Running-Tool-Project",
+    "tags": ["JavaScript", "Tools"],
+    "text": "# A Dry Running tool for assembly Presentation: live."
+  },
+  {
+    "id": "assembly-nasm",
+    "title": "assembly-nasm",
+    "url": "https://github.com/hammadshakeelai/assembly-nasm",
+    "tags": [],
+    "text": "Nasm and Afd-debugger in dosbox Forked project: original authorship belongs to upstream. Source repository."
+  },
+  {
+    "id": "books",
+    "title": "books",
+    "url": "https://github.com/hammadshakeelai/books",
+    "tags": [],
+    "text": "A collection of reading material. Collected works are credited to their original authors. Reading collection; not a claim of authorship of the collected books. Source repository."
+  },
+  {
+    "id": "chatbot-like-claude",
+    "title": "Claude-style Chat",
+    "url": "https://github.com/hammadshakeelai/chatbot-like-claude",
+    "tags": ["JavaScript", "AI"],
+    "text": "A minimal, self-hostable AI chat web app with a Claude-style UI: conversation sidebar, streaming replies, and your choice of OpenAI-compatible model. Presentation: live."
+  },
+  {
+    "id": "claudesessionscheduler",
+    "title": "Claude Session Scheduler",
+    "url": "https://github.com/hammadshakeelai/ClaudeSessionScheduler",
+    "tags": ["HTML", "Tools"],
+    "text": "Plan sleep, life and up to 10 Claude sessions across every weekly reset cycle. A fast, offline, single-file planner. Presentation: live."
+  },
+  {
+    "id": "cli-chatbot",
+    "title": "Mirage Terminal",
+    "url": "https://github.com/hammadshakeelai/cli-chatbot",
+    "tags": ["Next.js", "AI agents", "xterm.js", "TypeScript", "AI"],
+    "text": "A terminal-shaped playground for AI. Explore a simulated shell, agent interfaces, and conversational tools. Presentation: live. A web terminal with simulated PowerShell and AI CLI interfaces. Bring the familiarity of a terminal to a browser interface that can work on smaller screens. Next.js, React, xterm.js, and Zustand support the terminal experience. Simulated shell activity and AI responses are distinct parts of the system. A deployed terminal interface that opens from this portfolio in its own tab. The deployment blocks embedding. Shell/tool activity is simulated; AI replies depend on the configured service."
+  },
+  {
+    "id": "complete-python-bootcamp",
+    "title": "Complete-Python-Bootcamp",
+    "url": "https://github.com/hammadshakeelai/Complete-Python-Bootcamp",
+    "tags": ["Jupyter Notebook"],
+    "text": "Public project archive. Forked project: original authorship belongs to upstream. Source repository."
+  },
+  {
+    "id": "cpp-for-beginners",
+    "title": "Cpp-for-Beginners",
+    "url": "https://github.com/hammadshakeelai/Cpp-for-Beginners",
+    "tags": ["Jupyter Notebook"],
+    "text": "a C++ Repository for Beginner with All of  My codes with Explanation Source repository."
+  },
+  {
+    "id": "daily-coding",
+    "title": "Daily-Coding",
+    "url": "https://github.com/hammadshakeelai/Daily-Coding",
+    "tags": ["Jupyter Notebook"],
+    "text": "Public project archive. Source repository."
+  },
+  {
+    "id": "data-structures-in-cpp",
+    "title": "Data-Structures-in-Cpp",
+    "url": "https://github.com/hammadshakeelai/Data-Structures-in-Cpp",
+    "tags": ["C++"],
+    "text": "Public project archive. Source repository."
+  },
+  {
+    "id": "databases",
+    "title": "Databases",
+    "url": "https://github.com/hammadshakeelai/Databases",
+    "tags": [],
+    "text": "practising data bases Source repository."
+  },
+  {
+    "id": "doomsday",
+    "title": "Doomsday",
+    "url": "https://github.com/hammadshakeelai/Doomsday",
+    "tags": ["Jupyter Notebook", "Applications"],
+    "text": "Calculate the day of the week for any date in your head. C++ implementation of Conway's Doomsday algorithm, plus a WebAssembly terminal and a practice game. Presentation: live."
+  },
+  {
+    "id": "doomsday-algorithm-in-assembly-language",
+    "title": "Doomsday / Assembly",
+    "url": "https://github.com/hammadshakeelai/Doomsday-Algorithm-In-Assembly-Language",
+    "tags": ["NASM", "WebAssembly", "Mathematics", "Jupyter Notebook", "Tools"],
+    "text": "Find the weekday of any date, with handwritten assembly running inside your browser. Presentation: live. An assembly implementation of Conway’s weekday calculation method presented in a browser environment. Make a low-level mathematical program approachable without requiring a visitor to configure DOS tools. Handwritten NASM runs through a browser DOSBox/WebAssembly environment, with an interactive application and source views. A public demonstration linking calendar arithmetic with assembly programming. Dates and execution follow the original program’s supported input rules. Browser emulation is a demonstration environment."
+  },
+  {
+    "id": "doremon",
+    "title": "doremon",
+    "url": "https://github.com/hammadshakeelai/doremon",
+    "tags": [],
+    "text": "this a practice repo Source repository."
+  },
+  {
+    "id": "food-suggestor",
+    "title": "Pink Plate",
+    "url": "https://github.com/hammadshakeelai/food-suggestor",
+    "tags": ["JavaScript", "AI"],
+    "text": "🍽️ Pink Plate — a pink-themed AI recipe chatbot (Agnes AI). Mobile-first vanilla JS UI, zero deps, Vercel-ready. Presentation: live."
+  },
+  {
+    "id": "future-goals",
+    "title": "FUTURE-GOALS",
+    "url": "https://github.com/hammadshakeelai/FUTURE-GOALS",
+    "tags": [],
+    "text": "Public project archive. Source repository."
+  },
+  {
+    "id": "fyp",
+    "title": "FYP",
+    "url": "https://github.com/hammadshakeelai/FYP",
+    "tags": [],
+    "text": "Public project archive. Source repository."
+  },
+  {
+    "id": "game-database-project",
+    "title": "Super Tic-Tac-Toe",
+    "url": "https://github.com/hammadshakeelai/Game-Database-Project",
+    "tags": ["React", "Socket.IO", "Games", "TypeScript", "Applications"],
+    "text": "Nine boards. One bigger game. A multiplayer experiment in strategy, tournaments, and real-time play. Presentation: live. A game and tournament platform built around Super Tic-Tac-Toe. A multiplayer game must communicate board state clearly while coordinating actions between players. A React and TypeScript client connects to an Express and Socket.IO backend. The repository also includes academic database documentation. A hosted game interface with a source repository documenting the broader system. The free Render service may need time to wake. Multiplayer depends on backend availability and other participants."
+  },
+  {
+    "id": "gpa-calculator-adanced-project-ims",
+    "title": "GPA Calculator",
+    "url": "https://github.com/hammadshakeelai/GPA-Calculator-Adanced-Project-IMS",
+    "tags": ["JavaScript", "Applications"],
+    "text": "web for private  || public gpa ... uses calculations...fast ...presets.. Presentation: live."
+  },
+  {
+    "id": "gui-projects",
+    "title": "Gui-Projects",
+    "url": "https://github.com/hammadshakeelai/Gui-Projects",
+    "tags": ["C++"],
+    "text": "My C++ Gui Practise and Projects  Source repository."
+  },
+  {
+    "id": "hammadshakeelai",
+    "title": "Behind this site",
+    "url": "https://github.com/hammadshakeelai/hammadshakeelai",
+    "tags": ["React", "Three.js", "TypeScript", "Tools"],
+    "text": "The source of Hammad’s Lab: one project catalog, an interactive orbital homepage, a 3D world, and a browser desktop. Source repository."
+  },
+  {
+    "id": "hermes-agent",
+    "title": "hermes-agent",
+    "url": "https://github.com/hammadshakeelai/hermes-agent",
+    "tags": ["Python"],
+    "text": "The agent that grows with you Forked project: original authorship belongs to upstream. Source repository."
+  },
+  {
+    "id": "java-beginner",
+    "title": "Java-Beginner",
+    "url": "https://github.com/hammadshakeelai/Java-Beginner",
+    "tags": ["Jupyter Notebook"],
+    "text": "# Java For Beginners Source repository."
+  },
+  {
+    "id": "javascript-beginner",
+    "title": "Javascript-Beginner",
+    "url": "https://github.com/hammadshakeelai/Javascript-Beginner",
+    "tags": ["Jupyter Notebook"],
+    "text": "# Learning Javascript from scratch via chatgpt5 Source repository."
+  },
+  {
+    "id": "kaggle-run-skill",
+    "title": "kaggle-run-skill",
+    "url": "https://github.com/hammadshakeelai/kaggle-run-skill",
+    "tags": ["Python", "Agent tooling", "Kaggle", "Python", "Tools"],
+    "text": "A small command surface for a big workflow. Deploy notebooks, inspect runs, and work with Kaggle from coding agents. Presentation: source. Kaggle workflow tooling for AI coding agents, including notebook deployment and competition workflows. Reduce repeated manual steps while keeping a coding agent’s context focused on the current task. A compact skill router points to purpose-specific Python scripts. The repository documents notebook runs, error handling, and supported agent integrations. A reusable public skill with source, installation guidance, and examples. Actual Kaggle operations need the user’s own credentials and appropriate competition permissions. This portfolio never submits jobs on a visitor’s behalf."
+  },
+  {
+    "id": "lstm-visualized",
+    "title": "LSTM-visualized",
+    "url": "https://github.com/hammadshakeelai/LSTM-visualized",
+    "tags": [],
+    "text": "Public project archive. Source repository."
+  },
+  {
+    "id": "mafia-host-tool",
+    "title": "Mafia Host Tool",
+    "url": "https://github.com/hammadshakeelai/Mafia-Host-Tool",
+    "tags": ["TypeScript", "Applications"],
+    "text": "A party-game role distribution tool. Its previously published service is currently unavailable; explore the source. Presentation: unavailable."
+  },
+  {
+    "id": "mcq-maker",
+    "title": "MCQ Maker",
+    "url": "https://github.com/hammadshakeelai/mcq-maker",
+    "tags": ["HTML", "Tools"],
+    "text": "A reusable skill that turns documents into quizzes. Try an existing example quiz in the browser. Presentation: reference."
+  },
+  {
+    "id": "mermaid-language-2026",
+    "title": "Mermaid-Language-2026",
+    "url": "https://github.com/hammadshakeelai/Mermaid-Language-2026",
+    "tags": [],
+    "text": "Practising and Developing, using Mermaid markdown Language. Source repository."
+  },
+  {
+    "id": "nano-swarm-intelligence-coronary-clot-simulator",
+    "title": "Nano-Swarm",
+    "url": "https://github.com/hammadshakeelai/Nano-Swarm-Intelligence-Coronary-Clot-Simulator",
+    "tags": [
+      "Three.js",
+      "TypeScript",
+      "Swarm systems",
+      "TypeScript",
+      "Simulations"
+    ],
+    "text": "Guide a swarm through a simulated artery. Change the parameters and watch coordination emerge. Presentation: live. A browser-first educational simulation of coordinated microrobot-inspired agents interacting with a clot. Explain swarm coordination through a repeatable interactive model with visible controls and metrics. TypeScript separates deterministic simulation, rendering, guided playback, metrics, and exports. Three.js presents the pseudo-3D artery scene. The original application is built from a pinned source revision and hosted alongside this portfolio. Simplified educational visualization only: not a medical device, not patient-specific, and not predictive of treatment outcomes."
+  },
+  {
+    "id": "north-korea-sort",
+    "title": "North Korea Sort",
+    "url": "https://github.com/hammadshakeelai/North-Korea-Sort",
+    "tags": ["JavaScript", "Applications"],
+    "text": "A satirical sorting cartoon with animation and audio. A playful experiment from the archive. Presentation: live."
+  },
+  {
+    "id": "obliteratus",
+    "title": "OBLITERATUS",
+    "url": "https://github.com/hammadshakeelai/OBLITERATUS",
+    "tags": [],
+    "text": "OBLITERATE THE CHAINS THAT BIND YOU Forked project: original authorship belongs to upstream. Source repository."
+  },
+  {
+    "id": "operating-systems",
+    "title": "Operating-Systems",
+    "url": "https://github.com/hammadshakeelai/Operating-Systems",
+    "tags": ["Jupyter Notebook"],
+    "text": "My Research Of Operating Systems and Including Matters Source repository."
+  },
+  {
+    "id": "pakimongo",
+    "title": "PakimonGO",
+    "url": "https://github.com/hammadshakeelai/PakimonGO",
+    "tags": ["Flutter", "FastAPI", "Computer vision", "Python", "Applications"],
+    "text": "Turn a real animal sighting into a discovery. Photograph wildlife, explore the map, and build a collection. Presentation: mobile. A wildlife photography app with discovery, collections, maps, and competition. Connect real-world photographs to an engaging collection and exploration experience. Flutter provides the mobile interface. FastAPI supports server behavior, with PostgreSQL, Firebase, and vision services documented in the project. An Android alpha release and a public repository containing application screenshots and architecture notes. The app requires Android and relevant service availability. This portfolio presents real screenshots rather than simulating a working mobile app."
+  },
+  {
+    "id": "presentations-pptx",
+    "title": "presentations-pptx",
+    "url": "https://github.com/hammadshakeelai/presentations-pptx",
+    "tags": [],
+    "text": "Free presenation easy and concise for fun Source repository."
+  },
+  {
+    "id": "python",
+    "title": "PYTHON",
+    "url": "https://github.com/hammadshakeelai/PYTHON",
+    "tags": ["Python"],
+    "text": "Python practise repository (questions and solutions) Source repository."
+  },
+  {
+    "id": "python--25",
+    "title": "Python--25",
+    "url": "https://github.com/hammadshakeelai/Python--25",
+    "tags": ["Jupyter Notebook"],
+    "text": "Public project archive. Source repository."
+  },
+  {
+    "id": "python2026-ai-ml",
+    "title": "Python2026-AI-ML",
+    "url": "https://github.com/hammadshakeelai/Python2026-AI-ML",
+    "tags": ["Jupyter Notebook"],
+    "text": "ML and DLL in python Source repository."
+  },
+  {
+    "id": "r-programming",
+    "title": "R-programming",
+    "url": "https://github.com/hammadshakeelai/R-programming",
+    "tags": ["Jupyter Notebook"],
+    "text": "R-programing for statistics and probabilty Source repository."
+  },
+  {
+    "id": "rag-powered-document-assistant",
+    "title": "RAG-Powered-Document-Assistant",
+    "url": "https://github.com/hammadshakeelai/RAG-Powered-Document-Assistant",
+    "tags": [],
+    "text": "Week 1 - RAG Powered Document Assistant - Part 1 of 3 months Internship by CORTEX DIGITAL SYSTEMS (PRIVATE) LIMITED Forked project: original authorship belongs to upstream. Source repository."
+  },
+  {
+    "id": "relearning-c",
+    "title": "ReLearning-C",
+    "url": "https://github.com/hammadshakeelai/ReLearning-C",
+    "tags": ["C"],
+    "text": "# Relearning C Entirely Source repository."
+  },
+  {
+    "id": "repodoctor-deploy",
+    "title": "RepoDoctor",
+    "url": "https://github.com/hammadshakeelai/RepoDoctor-Deploy",
+    "tags": ["Python", "Tools"],
+    "text": "A landing-page preview for a multi-agent repository auditor. Running the auditor requires its backend. Presentation: landing."
+  },
+  {
+    "id": "retinotwin",
+    "title": "RetinoTwin",
+    "url": "https://github.com/hammadshakeelai/RetinoTwin",
+    "tags": [
+      "Three.js",
+      "Next.js",
+      "Scientific computing",
+      "TypeScript",
+      "Simulations"
+    ],
+    "text": "Explore synthetic eye anatomy and imaging through an educational digital-twin prototype. Presentation: live. An educational prototype for synthetic eye anatomy and multimodal imaging exploration. Present anatomy and imaging concepts in an interactive interface while making the limits of synthetic data clear. Next.js and React organize the interface with Three.js and state management supporting interactive views. The current eye presentation includes an SVG cutaway. A publicly accessible prototype for exploring the model and its controls. Educational synthetic visualization, not a medical device, diagnostic system, or validated patient-specific prediction."
+  },
+  {
+    "id": "ruview",
+    "title": "RuView",
+    "url": "https://github.com/hammadshakeelai/RuView",
+    "tags": [],
+    "text": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video. Forked project: original authorship belongs to upstream. Source repository."
+  },
+  {
+    "id": "safetynet2",
+    "title": "safetynet2",
+    "url": "https://github.com/hammadshakeelai/safetynet2",
+    "tags": ["Python"],
+    "text": "sadetynet literally Source repository."
+  },
+  {
+    "id": "software-engineering-project--utos",
+    "title": "UTOS",
+    "url": "https://github.com/hammadshakeelai/Software-Engineering-Project--UTOS",
+    "tags": ["Python", "Applications"],
+    "text": "Scheduling Webite for a University University timetabling course project created with a team; see the repository for contributors. Presentation: live."
+  },
+  {
+    "id": "study-plan-roadmap",
+    "title": "STUDY-PLAN-ROADMAP",
+    "url": "https://github.com/hammadshakeelai/STUDY-PLAN-ROADMAP",
+    "tags": ["Jupyter Notebook"],
+    "text": "Public project archive. Source repository."
+  },
+  {
+    "id": "supertictactoe-test-ai-studio",
+    "title": "Super Tic-Tac-Toe prototype",
+    "url": "https://github.com/hammadshakeelai/superTicTacToe-test-ai-studio",
+    "tags": ["TypeScript", "Applications"],
+    "text": "testing ai studio Presentation: live."
+  },
+  {
+    "id": "tekken7",
+    "title": "tekken7",
+    "url": "https://github.com/hammadshakeelai/tekken7",
+    "tags": [],
+    "text": "An upload experiment from the archive; not an authored version of the commercial game. Source repository."
+  },
+  {
+    "id": "top-10-nlp-algorithms-simulators",
+    "title": "NLP Reference Lab",
+    "url": "https://github.com/hammadshakeelai/TOP-10-NLP-ALGORITHMS-SIMULATORS",
+    "tags": ["Python", "AI"],
+    "text": "Explore precomputed reference runs for 13 NLP algorithms. The hosted player replays examples; custom input is not executed. Presentation: reference."
+  },
+  {
+    "id": "v86",
+    "title": "v86",
+    "url": "https://github.com/hammadshakeelai/v86",
+    "tags": [],
+    "text": "x86 PC emulator and x86-to-wasm JIT, running in the browser Forked project: original authorship belongs to upstream. Source repository."
+  },
+  {
+    "id": "visualizers",
+    "title": "Transformer Visualizer",
+    "url": "https://github.com/hammadshakeelai/Visualizers",
+    "tags": [
+      "Transformers",
+      "Machine learning",
+      "JavaScript",
+      "JavaScript",
+      "AI"
+    ],
+    "text": "A closer look at attention, tokens, and the ideas inside machine learning. Part of an expanding visualizer collection. Presentation: live. A collection of visual experiments including transformer concepts and Gaussian Naive Bayes. Translate abstract machine-learning operations into controls and relationships people can explore. Browser-native visual interfaces present model concepts without asking visitors to set up a notebook environment. Public transformer and Naive Bayes demonstrations, alongside an additional timezone-clock experiment. Conceptual visualization is not evidence of production model training or measured predictive performance."
+  },
+  {
+    "id": "vms-for-all",
+    "title": "VMs-for-all",
+    "url": "https://github.com/hammadshakeelai/VMs-for-all",
+    "tags": ["Batchfile"],
+    "text": "Public project archive. Source repository."
+  },
+  {
+    "id": "web-dev-coding",
+    "title": "web-dev-coding",
+    "url": "https://github.com/hammadshakeelai/web-dev-coding",
+    "tags": ["HTML"],
+    "text": "web dev coding Source repository."
+  },
+  {
+    "id": "about-hammad",
+    "title": "About Hammad",
+    "url": "https://github.com/hammadshakeelai",
+    "tags": ["about", "hammad", "contact", "AI", "Pakistan"],
+    "text": "Muhammad Hammad Shakeel is an Artificial Intelligence student at IM|Sciences in Pakistan. He builds software, AI agent tooling, browser applications, and educational simulations. Public interests include badminton, table tennis, gym, and learning. Public contact: hammadshakeel61@gmail.com. No employment history or professional certifications are documented in this portfolio."
+  }
+]
