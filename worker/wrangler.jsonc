@@ -1,0 +1,26 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "hammads-lab-guide",
+  "main": "index.ts",
+  "account_id": "b19dc4ccf7b7f35dcdd4d9969a620ee7",
+  "compatibility_date": "2026-09-01",
+  "workers_dev": true,
+  "ai": { "binding": "AI" },
+  "vars": {
+    "AI_ENABLED": "true",
+    "ENVIRONMENT": "production",
+  },
+  "ratelimits": [
+    {
+      "name": "GUIDE_RATE_LIMITER",
+      "namespace_id": "2026090501",
+      "simple": { "limit": 6, "period": 60 },
+    },
+    {
+      "name": "GUIDE_GLOBAL_LIMITER",
+      "namespace_id": "2026090502",
+      "simple": { "limit": 30, "period": 60 },
+    },
+  ],
+  "observability": { "enabled": false },
+}
