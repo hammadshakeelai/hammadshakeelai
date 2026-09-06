@@ -1,0 +1,318 @@
+{
+  "ASMBOOK": {
+    "name": "ASMBOOK",
+    "summary": "A notebook that lets you look inside the machine. Write 8086 assembly, inspect the CPU, and follow every instruction.",
+    "category": "Tools",
+    "tags": ["Assembly", "TypeScript", "Education"],
+    "featured": 1,
+    "status": "live",
+    "liveUrl": "https://hammadshakeelai.github.io/ASMBOOK/",
+    "embedUrl": "https://hammadshakeelai.github.io/ASMBOOK/",
+    "embedVerified": true,
+    "image": "media/asmbook.png",
+    "caseStudy": {
+      "intro": "An interactive assembly notebook with lessons and an inspectable CPU.",
+      "challenge": "Assembly becomes easier to reason about when instructions, registers, and execution can be examined together.",
+      "approach": "Preact and TypeScript organize the notebook interface. Browser emulation and execution views bring the low-level program into an accessible environment.",
+      "outcome": "A deployed browser notebook visitors can explore without installing a local assembly toolchain.",
+      "limitations": "An educational environment; emulator and lesson behavior should be evaluated for the particular instruction being studied."
+    }
+  },
+  "algorithms-visualizer": {
+    "name": "AlgoViz",
+    "summary": "Watch an algorithm think. Step through sorting, searching, graphs, and data structures at your own pace.",
+    "category": "Simulations",
+    "tags": ["Algorithms", "JavaScript", "Visualization"],
+    "featured": 2,
+    "status": "live",
+    "liveUrl": "https://hammadshakeelai.github.io/algorithms-visualizer/",
+    "embedUrl": "https://hammadshakeelai.github.io/algorithms-visualizer/sorting.html",
+    "embedVerified": true,
+    "caseStudy": {
+      "intro": "A collection of interactive algorithm and data-structure visualizations.",
+      "challenge": "A final sorted list hides the comparisons, swaps, and intermediate states that explain an algorithm.",
+      "approach": "Vanilla JavaScript modules separate algorithm behavior from the interface. Playback turns intermediate states into something visitors can follow.",
+      "outcome": "A public visual playground spanning sorting, searching, graph algorithms, and data structures.",
+      "limitations": "Visual examples teach behavior; browser animation timings are not reliable algorithm benchmarks."
+    }
+  },
+  "RetinoTwin": {
+    "name": "RetinoTwin",
+    "summary": "Explore synthetic eye anatomy and imaging through an educational digital-twin prototype.",
+    "category": "Simulations",
+    "tags": ["Three.js", "Next.js", "Scientific computing"],
+    "featured": 3,
+    "status": "live",
+    "liveUrl": "https://retinotwin.vercel.app/",
+    "embedUrl": "https://retinotwin.vercel.app/",
+    "embedVerified": true,
+    "image": "media/retinotwin.png",
+    "caseStudy": {
+      "intro": "An educational prototype for synthetic eye anatomy and multimodal imaging exploration.",
+      "challenge": "Present anatomy and imaging concepts in an interactive interface while making the limits of synthetic data clear.",
+      "approach": "Next.js and React organize the interface with Three.js and state management supporting interactive views. The current eye presentation includes an SVG cutaway.",
+      "outcome": "A publicly accessible prototype for exploring the model and its controls.",
+      "limitations": "Educational synthetic visualization, not a medical device, diagnostic system, or validated patient-specific prediction."
+    }
+  },
+  "Game-Database-Project": {
+    "name": "Super Tic-Tac-Toe",
+    "summary": "Nine boards. One bigger game. A multiplayer experiment in strategy, tournaments, and real-time play.",
+    "category": "Applications",
+    "tags": ["React", "Socket.IO", "Games"],
+    "featured": 4,
+    "status": "live",
+    "liveUrl": "https://super-tic-tac-toe-kcyp.onrender.com/",
+    "embedUrl": "https://super-tic-tac-toe-kcyp.onrender.com/",
+    "embedVerified": true,
+    "caseStudy": {
+      "intro": "A game and tournament platform built around Super Tic-Tac-Toe.",
+      "challenge": "A multiplayer game must communicate board state clearly while coordinating actions between players.",
+      "approach": "A React and TypeScript client connects to an Express and Socket.IO backend. The repository also includes academic database documentation.",
+      "outcome": "A hosted game interface with a source repository documenting the broader system.",
+      "limitations": "The free Render service may need time to wake. Multiplayer depends on backend availability and other participants."
+    }
+  },
+  "PakimonGO": {
+    "name": "PakimonGO",
+    "summary": "Turn a real animal sighting into a discovery. Photograph wildlife, explore the map, and build a collection.",
+    "category": "Applications",
+    "tags": ["Flutter", "FastAPI", "Computer vision"],
+    "featured": 5,
+    "status": "mobile",
+    "liveUrl": "https://github.com/hammadshakeelai/PakimonGO/releases",
+    "image": "media/pakimongo-collection_dark.png",
+    "images": [
+      "media/pakimongo-collection_dark.png",
+      "media/pakimongo-map.png",
+      "media/pakimongo-leaderboard.png",
+      "media/pakimongo-history.png",
+      "media/pakimongo-profile_dark.png",
+      "media/pakimongo-onboarding.png"
+    ],
+    "caseStudy": {
+      "intro": "A wildlife photography app with discovery, collections, maps, and competition.",
+      "challenge": "Connect real-world photographs to an engaging collection and exploration experience.",
+      "approach": "Flutter provides the mobile interface. FastAPI supports server behavior, with PostgreSQL, Firebase, and vision services documented in the project.",
+      "outcome": "An Android alpha release and a public repository containing application screenshots and architecture notes.",
+      "limitations": "The app requires Android and relevant service availability. This portfolio presents real screenshots rather than simulating a working mobile app."
+    }
+  },
+  "Doomsday-Algorithm-In-Assembly-Language": {
+    "name": "Doomsday / Assembly",
+    "summary": "Find the weekday of any date, with handwritten assembly running inside your browser.",
+    "category": "Tools",
+    "tags": ["NASM", "WebAssembly", "Mathematics"],
+    "featured": 6,
+    "status": "live",
+    "liveUrl": "https://hammadshakeelai.github.io/Doomsday-Algorithm-In-Assembly-Language/",
+    "embedUrl": "https://hammadshakeelai.github.io/Doomsday-Algorithm-In-Assembly-Language/doomsday.html",
+    "embedVerified": true,
+    "image": "media/doomsday-algorithm-in-assembly-language.png",
+    "caseStudy": {
+      "intro": "An assembly implementation of Conway’s weekday calculation method presented in a browser environment.",
+      "challenge": "Make a low-level mathematical program approachable without requiring a visitor to configure DOS tools.",
+      "approach": "Handwritten NASM runs through a browser DOSBox/WebAssembly environment, with an interactive application and source views.",
+      "outcome": "A public demonstration linking calendar arithmetic with assembly programming.",
+      "limitations": "Dates and execution follow the original program’s supported input rules. Browser emulation is a demonstration environment."
+    }
+  },
+  "Visualizers": {
+    "name": "Transformer Visualizer",
+    "summary": "A closer look at attention, tokens, and the ideas inside machine learning. Part of an expanding visualizer collection.",
+    "category": "AI",
+    "tags": ["Transformers", "Machine learning", "JavaScript"],
+    "featured": 7,
+    "status": "live",
+    "liveUrl": "https://hammadshakeelai.github.io/Visualizers/transformer-visualizer/",
+    "embedUrl": "https://hammadshakeelai.github.io/Visualizers/transformer-visualizer/",
+    "embedVerified": true,
+    "caseStudy": {
+      "intro": "A collection of visual experiments including transformer concepts and Gaussian Naive Bayes.",
+      "challenge": "Translate abstract machine-learning operations into controls and relationships people can explore.",
+      "approach": "Browser-native visual interfaces present model concepts without asking visitors to set up a notebook environment.",
+      "outcome": "Public transformer and Naive Bayes demonstrations, alongside an additional timezone-clock experiment.",
+      "limitations": "Conceptual visualization is not evidence of production model training or measured predictive performance."
+    }
+  },
+  "cli-chatbot": {
+    "name": "Mirage Terminal",
+    "summary": "A terminal-shaped playground for AI. Explore a simulated shell, agent interfaces, and conversational tools.",
+    "category": "AI",
+    "tags": ["Next.js", "AI agents", "xterm.js"],
+    "featured": 8,
+    "status": "live",
+    "liveUrl": "https://mirage-terminal.vercel.app/",
+    "embedVerified": false,
+    "caseStudy": {
+      "intro": "A web terminal with simulated PowerShell and AI CLI interfaces.",
+      "challenge": "Bring the familiarity of a terminal to a browser interface that can work on smaller screens.",
+      "approach": "Next.js, React, xterm.js, and Zustand support the terminal experience. Simulated shell activity and AI responses are distinct parts of the system.",
+      "outcome": "A deployed terminal interface that opens from this portfolio in its own tab.",
+      "limitations": "The deployment blocks embedding. Shell/tool activity is simulated; AI replies depend on the configured service."
+    }
+  },
+  "kaggle-run-skill": {
+    "name": "kaggle-run-skill",
+    "summary": "A small command surface for a big workflow. Deploy notebooks, inspect runs, and work with Kaggle from coding agents.",
+    "category": "Tools",
+    "tags": ["Python", "Agent tooling", "Kaggle"],
+    "featured": 9,
+    "status": "source",
+    "caseStudy": {
+      "intro": "Kaggle workflow tooling for AI coding agents, including notebook deployment and competition workflows.",
+      "challenge": "Reduce repeated manual steps while keeping a coding agent’s context focused on the current task.",
+      "approach": "A compact skill router points to purpose-specific Python scripts. The repository documents notebook runs, error handling, and supported agent integrations.",
+      "outcome": "A reusable public skill with source, installation guidance, and examples.",
+      "limitations": "Actual Kaggle operations need the user’s own credentials and appropriate competition permissions. This portfolio never submits jobs on a visitor’s behalf."
+    }
+  },
+  "Nano-Swarm-Intelligence-Coronary-Clot-Simulator": {
+    "name": "Nano-Swarm",
+    "summary": "Guide a swarm through a simulated artery. Change the parameters and watch coordination emerge.",
+    "category": "Simulations",
+    "tags": ["Three.js", "TypeScript", "Swarm systems"],
+    "featured": 10,
+    "status": "live",
+    "liveUrl": "demos/nano-swarm/index.html",
+    "embedUrl": "demos/nano-swarm/index.html",
+    "embedVerified": true,
+    "caseStudy": {
+      "intro": "A browser-first educational simulation of coordinated microrobot-inspired agents interacting with a clot.",
+      "challenge": "Explain swarm coordination through a repeatable interactive model with visible controls and metrics.",
+      "approach": "TypeScript separates deterministic simulation, rendering, guided playback, metrics, and exports. Three.js presents the pseudo-3D artery scene.",
+      "outcome": "The original application is built from a pinned source revision and hosted alongside this portfolio.",
+      "limitations": "Simplified educational visualization only: not a medical device, not patient-specific, and not predictive of treatment outcomes."
+    }
+  },
+  "Assembly-Language-Dry-Running-Tool-Project": {
+    "name": "Assembly Dry Runner",
+    "category": "Tools",
+    "status": "live",
+    "liveUrl": "https://hammadshakeelai.github.io/Assembly-Language-Dry-Running-Tool-Project/",
+    "embedUrl": "https://hammadshakeelai.github.io/Assembly-Language-Dry-Running-Tool-Project/",
+    "embedVerified": true
+  },
+  "Doomsday": {
+    "name": "Doomsday",
+    "category": "Applications",
+    "status": "live",
+    "liveUrl": "https://hammadshakeelai.github.io/Doomsday/",
+    "embedUrl": "https://hammadshakeelai.github.io/Doomsday/game.html",
+    "embedVerified": true
+  },
+  "TOP-10-NLP-ALGORITHMS-SIMULATORS": {
+    "name": "NLP Reference Lab",
+    "category": "AI",
+    "summary": "Explore precomputed reference runs for 13 NLP algorithms. The hosted player replays examples; custom input is not executed.",
+    "status": "reference",
+    "liveUrl": "https://hammadshakeelai.github.io/TOP-10-NLP-ALGORITHMS-SIMULATORS/",
+    "embedUrl": "https://hammadshakeelai.github.io/TOP-10-NLP-ALGORITHMS-SIMULATORS/",
+    "embedVerified": true
+  },
+  "superTicTacToe-test-ai-studio": {
+    "name": "Super Tic-Tac-Toe prototype",
+    "category": "Applications",
+    "status": "live",
+    "liveUrl": "https://hammadshakeelai.github.io/superTicTacToe-test-ai-studio/",
+    "embedUrl": "https://hammadshakeelai.github.io/superTicTacToe-test-ai-studio/",
+    "embedVerified": true
+  },
+  "GPA-Calculator-Adanced-Project-IMS": {
+    "name": "GPA Calculator",
+    "category": "Applications",
+    "status": "live",
+    "liveUrl": "https://hammadshakeelai.github.io/GPA-Calculator-Adanced-Project-IMS/",
+    "embedUrl": "https://hammadshakeelai.github.io/GPA-Calculator-Adanced-Project-IMS/",
+    "embedVerified": true
+  },
+  "North-Korea-Sort": {
+    "name": "North Korea Sort",
+    "summary": "A satirical sorting cartoon with animation and audio. A playful experiment from the archive.",
+    "category": "Applications",
+    "status": "live",
+    "liveUrl": "https://hammadshakeelai.github.io/North-Korea-Sort/",
+    "embedUrl": "https://hammadshakeelai.github.io/North-Korea-Sort/",
+    "embedVerified": true
+  },
+  "RepoDoctor-Deploy": {
+    "name": "RepoDoctor",
+    "category": "Tools",
+    "summary": "A landing-page preview for a multi-agent repository auditor. Running the auditor requires its backend.",
+    "status": "landing",
+    "liveUrl": "https://hammadshakeelai.github.io/RepoDoctor-Deploy/",
+    "embedUrl": "https://hammadshakeelai.github.io/RepoDoctor-Deploy/",
+    "embedVerified": true
+  },
+  "Software-Engineering-Project--UTOS": {
+    "name": "UTOS",
+    "category": "Applications",
+    "status": "live",
+    "attribution": "University timetabling course project created with a team; see the repository for contributors.",
+    "liveUrl": "https://utos.onrender.com/",
+    "embedUrl": "https://utos.onrender.com/",
+    "embedVerified": true
+  },
+  "ClaudeSessionScheduler": {
+    "name": "Claude Session Scheduler",
+    "category": "Tools",
+    "status": "live",
+    "liveUrl": "https://claude-session-scheduler.vercel.app/",
+    "embedUrl": "https://claude-session-scheduler.vercel.app/",
+    "embedVerified": true
+  },
+  "food-suggestor": {
+    "name": "Pink Plate",
+    "category": "AI",
+    "status": "live",
+    "liveUrl": "https://food-suggestor-five.vercel.app/",
+    "embedUrl": "https://food-suggestor-five.vercel.app/",
+    "embedVerified": true
+  },
+  "mcq-maker": {
+    "name": "MCQ Maker",
+    "category": "Tools",
+    "status": "reference",
+    "liveUrl": "https://mcq-maker-one.vercel.app/quiz.html",
+    "embedUrl": "https://mcq-maker-one.vercel.app/quiz.html",
+    "embedVerified": true,
+    "summary": "A reusable skill that turns documents into quizzes. Try an existing example quiz in the browser."
+  },
+  "chatbot-like-claude": {
+    "name": "Claude-style Chat",
+    "category": "AI",
+    "status": "live",
+    "liveUrl": "https://chatbot-like-claude.vercel.app/",
+    "embedUrl": "https://chatbot-like-claude.vercel.app/",
+    "embedVerified": true
+  },
+  "Mafia-Host-Tool": {
+    "name": "Mafia Host Tool",
+    "category": "Applications",
+    "status": "unavailable",
+    "summary": "A party-game role distribution tool. Its previously published service is currently unavailable; explore the source."
+  },
+  "agentic-ai-megaproject-template": {
+    "name": "Agentic Project Template",
+    "category": "Tools",
+    "tags": ["Python", "AI agents", "Architecture"]
+  },
+  "ai-stack": {
+    "name": "AI Stack",
+    "category": "AI",
+    "summary": "A local assistant stack with a model gateway and provider failover. Explore the architecture and configuration in the repository."
+  },
+  "books": {
+    "summary": "A collection of reading material. Collected works are credited to their original authors.",
+    "attribution": "Reading collection; not a claim of authorship of the collected books."
+  },
+  "tekken7": {
+    "summary": "An upload experiment from the archive; not an authored version of the commercial game."
+  },
+  "hammadshakeelai": {
+    "name": "Behind this site",
+    "category": "Tools",
+    "summary": "The source of Hammad’s Lab: one project catalog, an interactive orbital homepage, a 3D world, and a browser desktop.",
+    "tags": ["React", "Three.js", "TypeScript"]
+  }
+}
