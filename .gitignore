@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.demo-source/
+.wrangler/
+.env
+.env.*
+!.env.example
+graphify-out/
+*.tsbuildinfo
+test-results/
+coverage/
+public/demos/
+.dev.vars
