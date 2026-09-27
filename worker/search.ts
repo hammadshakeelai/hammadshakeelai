@@ -53,7 +53,7 @@ export function retrieveDocuments(
     const title = terms(document.title);
     const tags = terms(document.tags.join(" "));
     const body = terms(document.text);
-    let score = (document.projectId === projectId || document.id === projectId) && projectId ? 24 : 0;
+    let score = projectId && document.id === projectId ? 48 : projectId && document.projectId === projectId ? 24 : 0;
     for (const word of query) {
       if (title.includes(word)) score += 8;
       if (tags.includes(word)) score += 5;
