@@ -1,4 +1,12 @@
-import { Suspense, lazy, useEffect, useRef, useState } from "react";
+import {
+  Suspense,
+  lazy,
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Html, OrbitControls, Stars } from "@react-three/drei";
 import { Group, Mesh, Vector3 } from "three";
@@ -23,10 +31,21 @@ const rooms = [
   { name: "Workshop", x: 0, color: "#ffb36b" },
   { name: "Exhibition", x: 12, color: "#77ddf4" },
 ];
+const movementKeys = new Set([
+  "w",
+  "a",
+  "s",
+  "d",
+  "arrowup",
+  "arrowdown",
+  "arrowleft",
+  "arrowright",
+]);
 function Orb({ active }: { active: boolean }) {
   const ref = useRef<Group>(null);
   useFrame((_, dt) => {
-    if (active && ref.current) ref.current.rotation.y += dt * 0.13;
+    if (active && ref.current)
+      ref.current.rotation.y += Math.min(dt, 0.04) * 0.13;
   });
   return (
     <group ref={ref} position={[-12, 2, -4]}>
@@ -69,11 +88,13 @@ function Station({
   active: boolean;
 }) {
   const item = useRef<Mesh>(null);
-  useFrame(({ clock }, dt) => {
+  const elapsed = useRef(0);
+  useFrame((_, dt) => {
     if (!active || !item.current) return;
-    item.current.rotation.y += dt * 0.3;
+    elapsed.current += Math.min(dt, 0.04);
+    item.current.rotation.y += Math.min(dt, 0.04) * 0.3;
     item.current.position.y =
-      1.45 + Math.sin(clock.elapsedTime * 0.7 + index) * 0.12;
+      1.45 + Math.sin(elapsed.current * 0.7 + index) * 0.12;
   });
   return (
     <group position={position}>
@@ -148,7 +169,11 @@ function Pilot({
 }) {
   const ref = useRef<Group>(null);
   const camera = useThree((s) => s.camera);
-  const controls = useThree((s) => s.controls) as unknown as {target: Vector3; update: () => void} | null;
+  const invalidate = useThree((s) => s.invalidate);
+  const controls = useThree((s) => s.controls) as unknown as {
+    target: Vector3;
+    update: () => void;
+  } | null;
   const following = useRef(new Vector3());
   const pos = useRef(new Vector3(-12, 0.75, 6));
   const last = useRef("");
@@ -158,7 +183,9 @@ function Pilot({
     camera.position.set(pos.current.x, 10, 16);
     controls?.target.set(pos.current.x, 0, 0);
     controls?.update();
-  }, [destination, camera, controls]);
+    last.current = "";
+    invalidate();
+  }, [destination, camera, controls, invalidate]);
   useFrame((_, dt) => {
     if (!active) return;
     const delta = Math.min(dt, 0.04) * 5;
@@ -184,7 +211,7 @@ function Pilot({
     pos.current.z = Math.max(-7, Math.min(10, pos.current.z));
     if (ref.current) {
       ref.current.position.copy(pos.current);
-      if (moved) ref.current.rotation.y += dt * 2;
+      if (moved) ref.current.rotation.y += Math.min(dt, 0.04) * 2;
     }
     if (moved) {
       following.current.set(pos.current.x, 0, pos.current.z - 1);
@@ -248,11 +275,22 @@ export default function ExploreScene({
   const [element, active] = useSceneActivity<HTMLDivElement>();
   const [destination, setDestination] = useState({ room: 0, tick: 0 });
   const keys = useRef(new Set<string>());
+  const [moving, setMoving] = useState(false);
   const [near, setNear] = useState<Exhibit | null>(null);
   const [collected, setCollected] = useState<number[]>(() => {
     try {
-      const saved:unknown = JSON.parse(localStorage.getItem("lab-discoveries") || "[]");
-      return Array.isArray(saved) ? [...new Set(saved.filter((n):n is number=>Number.isInteger(n)&&n>=0&&n<3))] : [];
+      const saved: unknown = JSON.parse(
+        localStorage.getItem("lab-discoveries") || "[]",
+      );
+      return Array.isArray(saved)
+        ? [
+            ...new Set(
+              saved.filter(
+                (n): n is number => Number.isInteger(n) && n >= 0 && n < 3,
+              ),
+            ),
+          ]
+        : [];
     } catch {
       return [];
     }
@@ -261,76 +299,109 @@ export default function ExploreScene({
   const [physics, setPhysics] = useState(false);
   const nearRef = useRef(near);
   nearRef.current = near;
+  const openRef = useRef(onProject);
+  openRef.current = onProject;
+  const collectedRef = useRef(collected);
+  const setKey = useCallback((key: string, pressed: boolean) => {
+    if (pressed) keys.current.add(key);
+    else keys.current.delete(key);
+    setMoving(keys.current.size > 0);
+  }, []);
+  const clearKeys = useCallback(() => {
+    keys.current.clear();
+    setMoving(false);
+  }, []);
+  useEffect(() => {
+    if (!active) clearKeys();
+  }, [active, clearKeys]);
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
-      if (!element.current?.contains(document.activeElement)) return;
-      if ((e.target as HTMLElement).closest("input,textarea,select,button,a"))
+      if (document.hidden || !element.current?.contains(document.activeElement))
+        return;
+      if (
+        (e.target as HTMLElement).closest(
+          "input,textarea,select,button,a,[contenteditable=true]",
+        ) ||
+        e.ctrlKey ||
+        e.metaKey ||
+        e.altKey
+      )
         return;
       const k = e.key.toLowerCase();
-      if (
-        [
-          "w",
-          "a",
-          "s",
-          "d",
-          "arrowup",
-          "arrowdown",
-          "arrowleft",
-          "arrowright",
-        ].includes(k)
-      ) {
+      if (movementKeys.has(k)) {
         e.preventDefault();
-        keys.current.add(k);
+        setKey(k, true);
       }
-      if (k === "e" && nearRef.current) onProject(nearRef.current.id);
+      if (k === "e" && !e.repeat && nearRef.current)
+        openRef.current(nearRef.current.id);
     };
-    const up = (e: KeyboardEvent) => keys.current.delete(e.key.toLowerCase());
-    const blur = () => keys.current.clear();
+    const up = (e: KeyboardEvent) => {
+      const key = e.key.toLowerCase();
+      if (movementKeys.has(key)) setKey(key, false);
+    };
     window.addEventListener("keydown", down);
     window.addEventListener("keyup", up);
-    window.addEventListener("blur", blur);
+    window.addEventListener("blur", clearKeys);
     return () => {
       window.removeEventListener("keydown", down);
       window.removeEventListener("keyup", up);
-      window.removeEventListener("blur", blur);
+      window.removeEventListener("blur", clearKeys);
     };
-  }, [onProject, element]);
-  const stations = projects.map((p, i) => {
-    const room = i % 3;
-    const order = Math.floor(i / 3);
-    return {
-      project: p,
-      position: [
-        rooms[room].x + (order % 2 === 0 ? -3 : 3),
-        0,
-        order < 2 ? 1 : -4,
-      ] as [number, number, number],
-      room,
-    };
-  });
-  function collect(i: number) {
-    setCollected((previous) => {
-      if (previous.includes(i)) return previous;
-      const next = [...previous, i];
-      try {
-        localStorage.setItem("lab-discoveries", JSON.stringify(next));
-      } catch {}
-      setNotice(
-        next.length === 3
-          ? "All three signals found. Curiosity looks good on you."
-          : "Signal found: " +
-              [
-                "keep asking questions",
-                "make something playful",
-                "share what you learn",
-              ][i],
-      );
-      playTone(500 + i * 100);
-      return next;
-    });
-  }
+  }, [element, setKey, clearKeys]);
+  const stations = useMemo(
+    () =>
+      projects.map((p, i) => {
+        const room = i % 3;
+        const order = Math.floor(i / 3);
+        return {
+          project: p,
+          position: [
+            rooms[room].x + (order % 2 === 0 ? -3 : 3),
+            0,
+            order < 2 ? 1 : -4,
+          ] as [number, number, number],
+          room,
+        };
+      }),
+    [projects],
+  );
+  const collect = useCallback((i: number) => {
+    if (collectedRef.current.includes(i)) return;
+    const next = [...collectedRef.current, i];
+    collectedRef.current = next;
+    setCollected(next);
+    try {
+      localStorage.setItem("lab-discoveries", JSON.stringify(next));
+    } catch {}
+    setNotice(
+      next.length === 3
+        ? "All three signals found. Curiosity looks good on you."
+        : "Signal found: " +
+            [
+              "keep asking questions",
+              "make something playful",
+              "share what you learn",
+            ][i],
+    );
+    playTone(500 + i * 100);
+  }, []);
+  const continuous = active && (!reducedMotion || moving || physics);
   return (
-    <div className="explore-world" ref={element} tabIndex={0} aria-label="Interactive 3D lab. Focus here, then use W A S D or arrow keys to pilot the probe." onPointerDown={e=>{if(!(e.target as HTMLElement).closest('button,a'))element.current?.focus({preventScroll:true})}}>
+    <div
+      className="explore-world"
+      ref={element}
+      role="region"
+      tabIndex={0}
+      aria-label="Interactive 3D lab. Focus here, then use W A S D or arrow keys to pilot the probe."
+      onBlur={(e) => {
+        if (!e.currentTarget.contains(e.relatedTarget as Node | null))
+          clearKeys();
+      }}
+      onPointerDown={(e) => {
+        if (!(e.target as HTMLElement).closest("button,a"))
+          element.current?.focus({ preventScroll: true });
+      }}
+    >
       <div className="world-toolbar">
         <div
           className="world-destinations"
@@ -341,10 +412,12 @@ export default function ExploreScene({
             <button
               key={room.name}
               className={destination.room === i ? "selected" : ""}
+              aria-pressed={destination.room === i}
               onClick={() => {
                 setDestination({ room: i, tick: destination.tick + 1 });
                 setNear(null);
-                keys.current.clear();
+                clearKeys();
+                element.current?.focus({ preventScroll: true });
                 playTone(400 + i * 100);
               }}
             >
@@ -356,9 +429,15 @@ export default function ExploreScene({
       </div>
       <button
         className="world-reset"
-        onClick={() =>
-          setDestination({ ...destination, tick: destination.tick + 1 })
-        }
+        onClick={() => {
+          clearKeys();
+          setNear(null);
+          setDestination((previous) => ({
+            ...previous,
+            tick: previous.tick + 1,
+          }));
+          element.current?.focus({ preventScroll: true });
+        }}
       >
         Reset view
       </button>
@@ -380,13 +459,23 @@ export default function ExploreScene({
         camera={{ position: [-12, 10, 17], fov: 48 }}
         dpr={quality === "low" ? 1 : [1, 1.5]}
         gl={{ antialias: quality !== "low" }}
-        frameloop={active ? "always" : "never"}
+        frameloop={!active ? "never" : continuous ? "always" : "demand"}
+        fallback={
+          <div className="lab-scene-fallback">
+            <span aria-hidden="true">◌</span>
+            <p>
+              The 3D view is unavailable on this device.
+              <br />
+              Open any project using the links below.
+            </p>
+          </div>
+        }
       >
         <color attach="background" args={["#0b1128"]} />
         <fog attach="fog" args={["#0b1128", 25, 62]} />
         <Suspense fallback={null}>
           <StudioLights low={quality === "low"} />
-          <AdaptiveResolution quality={quality} active={active} />
+          <AdaptiveResolution quality={quality} active={continuous} />
           <Stars
             radius={50}
             depth={25}
@@ -483,8 +572,9 @@ export default function ExploreScene({
           <OrbitControls
             makeDefault
             target={[rooms[destination.room].x, 0, 0]}
-            enablePan
+            enablePan={false}
             enableZoom
+            enableDamping={!reducedMotion}
             minDistance={6}
             maxDistance={35}
             maxPolarAngle={Math.PI / 2.05}
@@ -515,11 +605,24 @@ export default function ExploreScene({
             aria-label={title}
             onPointerDown={(e) => {
               e.currentTarget.setPointerCapture(e.pointerId);
-              keys.current.add(key);
+              setKey(key, true);
             }}
-            onPointerUp={() => keys.current.delete(key)}
-            onPointerCancel={() => keys.current.delete(key)}
-            onLostPointerCapture={() => keys.current.delete(key)}
+            onPointerUp={() => setKey(key, false)}
+            onPointerCancel={() => setKey(key, false)}
+            onLostPointerCapture={() => setKey(key, false)}
+            onKeyDown={(e) => {
+              if (e.key === " " || e.key === "Enter") {
+                e.preventDefault();
+                setKey(key, true);
+              }
+            }}
+            onKeyUp={(e) => {
+              if (e.key === " " || e.key === "Enter") {
+                e.preventDefault();
+                setKey(key, false);
+              }
+            }}
+            onBlur={() => setKey(key, false)}
           >
             {label}
           </button>
