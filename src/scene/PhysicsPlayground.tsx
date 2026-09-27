@@ -28,7 +28,11 @@ function Cube({ index }: { index: number }) {
     </RigidBody>
   );
 }
-export default function PhysicsPlayground({paused=false}:{paused?:boolean}) {
+export default function PhysicsPlayground({
+  paused = false,
+}: {
+  paused?: boolean;
+}) {
   return (
     <Physics gravity={[0, -9.81, 0]} paused={paused}>
       <RigidBody type="fixed" position={[0, -0.3, -3]}>
