@@ -17,14 +17,19 @@ export function useSceneActivity<T extends HTMLElement>(): [
   useEffect(() => {
     const onVisibility = () => setVisible(!document.hidden);
     document.addEventListener("visibilitychange", onVisibility);
-    const observer = new IntersectionObserver(
-      ([entry]) => setInView(entry.isIntersecting),
-      { rootMargin: "80px" },
-    );
-    if (element.current) observer.observe(element.current);
+    const observer =
+      typeof IntersectionObserver === "undefined"
+        ? null
+        : new IntersectionObserver(
+            ([entry]) => {
+              if (entry) setInView(entry.isIntersecting);
+            },
+            { rootMargin: "80px" },
+          );
+    if (element.current) observer?.observe(element.current);
     return () => {
       document.removeEventListener("visibilitychange", onVisibility);
-      observer.disconnect();
+      observer?.disconnect();
     };
   }, []);
   return [element, inView && visible];
@@ -94,9 +99,10 @@ export function AdaptiveResolution({
     );
   }, [quality, setDpr]);
   useFrame((_, delta) => {
-    if (quality !== "auto" || !active || samples.current.lowered || delta > 0.2)
+    if (quality !== "auto" || !active || samples.current.lowered || delta <= 0)
       return;
-    samples.current.seconds += delta;
+    // Bound a resumed frame without excluding persistently slow devices.
+    samples.current.seconds += Math.min(delta, 0.25);
     samples.current.frames += 1;
     if (samples.current.seconds > 5) {
       if (samples.current.frames / samples.current.seconds < 38) {
