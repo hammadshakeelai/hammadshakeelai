@@ -1,5 +1,6 @@
-import { retrieveDocuments, searchGuide, validateAIResponse } from "./search";
+import { corpus, retrieveDocuments, searchGuide, validateAIResponse } from "./search";
 import type { GuideMessage, GuideResponse } from "./search";
+import { loadPublishedCorpus } from "./corpus-loader";
 
 export const MODEL = "@cf/google/gemma-4-26b-a4b-it";
 export const MAX_REQUEST_BYTES = 8192;
@@ -132,8 +133,9 @@ async function complete(
   request: GuideRequest,
   env: Env,
 ): Promise<GuideResponse> {
-  const documents = retrieveDocuments(request.question, request.projectId);
-  const fallback = () => searchGuide(request.question, request.projectId);
+  const content = env.ENVIRONMENT === "production" ? await loadPublishedCorpus() : corpus;
+  const documents = retrieveDocuments(request.question, request.projectId, content);
+  const fallback = () => searchGuide(request.question, request.projectId, content);
   if (!env.AI || env.AI_ENABLED !== "true" || !documents.length)
     return fallback();
   let timer: ReturnType<typeof setTimeout> | undefined;
