@@ -139,8 +139,8 @@
   bottom: 18px;
   right: 20px;
   display: grid;
-  grid-template-columns: repeat(3, 35px);
-  grid-template-rows: repeat(2, 35px);
+  grid-template-columns: repeat(3, 44px);
+  grid-template-rows: repeat(2, 44px);
   gap: 4px;
   z-index: 3;
 }
@@ -249,6 +249,7 @@
     left: 10px;
     right: 10px;
     align-items: flex-start;
+    gap: 6px;
   }
   .world-destinations {
     gap: 1px;
@@ -256,7 +257,7 @@
   }
   .world-destinations button {
     font-size: 8px;
-    padding: 8px 9px;
+    padding: 8px 7px;
   }
   .world-collected {
     font-size: 7px;
@@ -266,7 +267,7 @@
     font-size: 7px;
     bottom: 20px;
     left: 14px;
-    max-width: 180px;
+    max-width: calc(100% - 178px);
   }
   .world-nearby {
     font-size: 9px;
