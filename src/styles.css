@@ -2957,3 +2957,10 @@ html[data-motion="reduced"] *:after {
   animation: none !important;
   transition: none !important;
 }
+
+.media-label { position: absolute; bottom: 12px; left: 12px; padding: 5px 8px; background: #080c21dc; color: #e9eef8; border: 1px solid #a8bbcd44; border-radius: 4px; font: 10px var(--mono); }
+.app-window:has(.preview-expanded) { z-index: 1000 !important; overflow: visible; }
+.window-body:has(.preview-expanded) { overflow: visible; }
+.preview-expanded .browser-chrome { display: flex; }
+.preview-expanded.compact .preview-stage { height: calc(100svh - 170px); }
+.preview-expanded { overflow: auto; }
