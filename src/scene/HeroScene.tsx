@@ -270,7 +270,7 @@ export default function HeroScene({ reducedMotion, quality }: HeroSceneProps) {
           alpha: true,
           powerPreference: "high-performance",
         }}
-        frameloop={active && !reducedMotion ? "always" : "demand"}
+        frameloop={!active ? "never" : reducedMotion ? "demand" : "always"}
         fallback={
           <div className="lab-scene-fallback">
             <span>◌</span>
@@ -280,7 +280,10 @@ export default function HeroScene({ reducedMotion, quality }: HeroSceneProps) {
       >
         <Suspense fallback={null}>
           <StudioLights low={quality === "low"} />
-          <AdaptiveResolution quality={quality} active={active} />
+          <AdaptiveResolution
+            quality={quality}
+            active={active && !reducedMotion}
+          />
           <Halo />
           <Dust />
           <OrbitalMachine
@@ -290,7 +293,7 @@ export default function HeroScene({ reducedMotion, quality }: HeroSceneProps) {
           <OrbitControls
             enableZoom={false}
             enablePan={false}
-            enableDamping
+            enableDamping={!reducedMotion}
             dampingFactor={0.08}
             rotateSpeed={0.45}
             minPolarAngle={0.65}
