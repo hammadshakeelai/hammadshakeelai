@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "@fontsource/syne/600.css";
-import "@fontsource/syne/700.css";
-import "@fontsource/syne/800.css";
-import "@fontsource/manrope/400.css";
-import "@fontsource/manrope/500.css";
-import "@fontsource/manrope/600.css";
-import "@fontsource/ibm-plex-mono/400.css";
+import "@fontsource/syne/latin-600.css";
+import "@fontsource/syne/latin-700.css";
+import "@fontsource/syne/latin-800.css";
+import "@fontsource/manrope/latin-400.css";
+import "@fontsource/manrope/latin-500.css";
+import "@fontsource/manrope/latin-600.css";
+import "@fontsource/ibm-plex-mono/latin-400.css";
 import App from "./App";
 import "./styles.css";
 ReactDOM.createRoot(document.getElementById("root")!).render(
@@ -14,3 +14,4 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <App />
   </React.StrictMode>,
 );
+
