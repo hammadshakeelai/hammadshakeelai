@@ -71,10 +71,12 @@ function Reveal({
   className?: string;
 }) {
   const reduce = useReducedMotion();
+  const motionPreference = useSettings((state) => state.motion);
+  const reduced = motionPreference === "reduced" || (motionPreference === "system" && reduce);
   return (
     <motion.div
       className={className}
-      initial={reduce ? false : { opacity: 0, y: 24 }}
+      initial={reduced ? false : { opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "0px 0px -50px 0px" }}
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
@@ -98,7 +100,7 @@ export default function App() {
   const project =
     section === "project"
       ? projects.find(
-          (p) => p.id === decodeURIComponent(route.split("/")[2] || ""),
+          (p) => p.id === (route.split("/")[2] || "").toLowerCase(),
         )
       : undefined;
   const article =
@@ -259,7 +261,7 @@ export default function App() {
               <span key={t}>{t}</span>
             ))}
           </div>
-          <ProjectPreview project={project} />
+          <ProjectPreview key={project.id} project={project} />
           {project.attribution && (
             <p className="attribution">{project.attribution}</p>
           )}
