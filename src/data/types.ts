@@ -22,6 +22,7 @@ export interface Project {
     | "archived";
   featured?: number;
   image?: string;
+  imageKind?: "application" | "repository";
   images?: string[];
   attribution?: string;
   updatedAt: string;
