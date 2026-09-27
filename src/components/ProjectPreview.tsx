@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   ExternalLink,
   Play,
@@ -28,7 +28,7 @@ export function ProjectArtwork({
         <img
           loading="lazy"
           src={asset(project.image)}
-          alt={`${project.name} application preview`}
+          alt={`${project.name} ${project.imageKind === "repository" ? "repository artwork" : "application preview"}`}
           onError={() => setFailed(true)}
         />
       ) : (
@@ -53,6 +53,9 @@ export function ProjectArtwork({
               "OPEN SOURCE"}
           </span>
         </div>
+      )}
+      {project.imageKind === "repository" && project.image && !failed && (
+        <span className="media-label">Repository artwork</span>
       )}
     </div>
   );
@@ -110,6 +113,13 @@ export default function ProjectPreview({
   const active = activeId === project.id;
   const canEmbed = project.embedVerified && project.embedUrl;
   const images = project.images || [];
+  useEffect(() => {
+    const exit = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setExpanded(false);
+    };
+    window.addEventListener("keydown", exit);
+    return () => window.removeEventListener("keydown", exit);
+  }, []);
   return (
     <div
       ref={ref}
@@ -215,6 +225,7 @@ export default function ProjectPreview({
           )}
         </div>
         <div className="toolbar-links">
+          {compact && <button aria-label={expanded ? "Exit expanded preview" : "Expand preview"} onClick={() => setExpanded(!expanded)}><Maximize2 size={14} /> {expanded ? "Restore" : "Expand"}</button>}
           {project.liveUrl && (
             <a href={asset(project.liveUrl)} target="_blank" rel="noreferrer">
               {project.status === "mobile" ? "Android releases" : "Open live"}
