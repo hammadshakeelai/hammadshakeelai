@@ -3,7 +3,11 @@
     "name": "ASMBOOK",
     "summary": "A notebook that lets you look inside the machine. Write 8086 assembly, inspect the CPU, and follow every instruction.",
     "category": "Tools",
-    "tags": ["Assembly", "TypeScript", "Education"],
+    "tags": [
+      "Assembly",
+      "TypeScript",
+      "Education"
+    ],
     "featured": 1,
     "status": "live",
     "liveUrl": "https://hammadshakeelai.github.io/ASMBOOK/",
@@ -22,7 +26,11 @@
     "name": "AlgoViz",
     "summary": "Watch an algorithm think. Step through sorting, searching, graphs, and data structures at your own pace.",
     "category": "Simulations",
-    "tags": ["Algorithms", "JavaScript", "Visualization"],
+    "tags": [
+      "Algorithms",
+      "JavaScript",
+      "Visualization"
+    ],
     "featured": 2,
     "status": "live",
     "liveUrl": "https://hammadshakeelai.github.io/algorithms-visualizer/",
@@ -34,13 +42,19 @@
       "approach": "Vanilla JavaScript modules separate algorithm behavior from the interface. Playback turns intermediate states into something visitors can follow.",
       "outcome": "A public visual playground spanning sorting, searching, graph algorithms, and data structures.",
       "limitations": "Visual examples teach behavior; browser animation timings are not reliable algorithm benchmarks."
-    }
+    },
+    "image": "media/algorithms-visualizer-repository.png",
+    "imageKind": "repository"
   },
   "RetinoTwin": {
     "name": "RetinoTwin",
     "summary": "Explore synthetic eye anatomy and imaging through an educational digital-twin prototype.",
     "category": "Simulations",
-    "tags": ["Three.js", "Next.js", "Scientific computing"],
+    "tags": [
+      "Three.js",
+      "Next.js",
+      "Scientific computing"
+    ],
     "featured": 3,
     "status": "live",
     "liveUrl": "https://retinotwin.vercel.app/",
@@ -53,13 +67,18 @@
       "approach": "Next.js and React organize the interface with Three.js and state management supporting interactive views. The current eye presentation includes an SVG cutaway.",
       "outcome": "A publicly accessible prototype for exploring the model and its controls.",
       "limitations": "Educational synthetic visualization, not a medical device, diagnostic system, or validated patient-specific prediction."
-    }
+    },
+    "imageKind": "repository"
   },
   "Game-Database-Project": {
     "name": "Super Tic-Tac-Toe",
     "summary": "Nine boards. One bigger game. A multiplayer experiment in strategy, tournaments, and real-time play.",
     "category": "Applications",
-    "tags": ["React", "Socket.IO", "Games"],
+    "tags": [
+      "React",
+      "Socket.IO",
+      "Games"
+    ],
     "featured": 4,
     "status": "live",
     "liveUrl": "https://super-tic-tac-toe-kcyp.onrender.com/",
@@ -71,13 +90,19 @@
       "approach": "A React and TypeScript client connects to an Express and Socket.IO backend. The repository also includes academic database documentation.",
       "outcome": "A hosted game interface with a source repository documenting the broader system.",
       "limitations": "The free Render service may need time to wake. Multiplayer depends on backend availability and other participants."
-    }
+    },
+    "image": "media/game-database-project-repository.png",
+    "imageKind": "repository"
   },
   "PakimonGO": {
     "name": "PakimonGO",
     "summary": "Turn a real animal sighting into a discovery. Photograph wildlife, explore the map, and build a collection.",
     "category": "Applications",
-    "tags": ["Flutter", "FastAPI", "Computer vision"],
+    "tags": [
+      "Flutter",
+      "FastAPI",
+      "Computer vision"
+    ],
     "featured": 5,
     "status": "mobile",
     "liveUrl": "https://github.com/hammadshakeelai/PakimonGO/releases",
@@ -102,7 +127,11 @@
     "name": "Doomsday / Assembly",
     "summary": "Find the weekday of any date, with handwritten assembly running inside your browser.",
     "category": "Tools",
-    "tags": ["NASM", "WebAssembly", "Mathematics"],
+    "tags": [
+      "NASM",
+      "WebAssembly",
+      "Mathematics"
+    ],
     "featured": 6,
     "status": "live",
     "liveUrl": "https://hammadshakeelai.github.io/Doomsday-Algorithm-In-Assembly-Language/",
@@ -115,13 +144,18 @@
       "approach": "Handwritten NASM runs through a browser DOSBox/WebAssembly environment, with an interactive application and source views.",
       "outcome": "A public demonstration linking calendar arithmetic with assembly programming.",
       "limitations": "Dates and execution follow the original program’s supported input rules. Browser emulation is a demonstration environment."
-    }
+    },
+    "imageKind": "repository"
   },
   "Visualizers": {
     "name": "Transformer Visualizer",
     "summary": "A closer look at attention, tokens, and the ideas inside machine learning. Part of an expanding visualizer collection.",
     "category": "AI",
-    "tags": ["Transformers", "Machine learning", "JavaScript"],
+    "tags": [
+      "Transformers",
+      "Machine learning",
+      "JavaScript"
+    ],
     "featured": 7,
     "status": "live",
     "liveUrl": "https://hammadshakeelai.github.io/Visualizers/transformer-visualizer/",
@@ -133,13 +167,19 @@
       "approach": "Browser-native visual interfaces present model concepts without asking visitors to set up a notebook environment.",
       "outcome": "Public transformer and Naive Bayes demonstrations, alongside an additional timezone-clock experiment.",
       "limitations": "Conceptual visualization is not evidence of production model training or measured predictive performance."
-    }
+    },
+    "image": "media/visualizers-repository.png",
+    "imageKind": "repository"
   },
   "cli-chatbot": {
     "name": "Mirage Terminal",
     "summary": "A terminal-shaped playground for AI. Explore a simulated shell, agent interfaces, and conversational tools.",
     "category": "AI",
-    "tags": ["Next.js", "AI agents", "xterm.js"],
+    "tags": [
+      "Next.js",
+      "AI agents",
+      "xterm.js"
+    ],
     "featured": 8,
     "status": "live",
     "liveUrl": "https://mirage-terminal.vercel.app/",
@@ -150,13 +190,19 @@
       "approach": "Next.js, React, xterm.js, and Zustand support the terminal experience. Simulated shell activity and AI responses are distinct parts of the system.",
       "outcome": "A deployed terminal interface that opens from this portfolio in its own tab.",
       "limitations": "The deployment blocks embedding. Shell/tool activity is simulated; AI replies depend on the configured service."
-    }
+    },
+    "image": "media/cli-chatbot-repository.png",
+    "imageKind": "repository"
   },
   "kaggle-run-skill": {
     "name": "kaggle-run-skill",
     "summary": "A small command surface for a big workflow. Deploy notebooks, inspect runs, and work with Kaggle from coding agents.",
     "category": "Tools",
-    "tags": ["Python", "Agent tooling", "Kaggle"],
+    "tags": [
+      "Python",
+      "Agent tooling",
+      "Kaggle"
+    ],
     "featured": 9,
     "status": "source",
     "caseStudy": {
@@ -165,13 +211,19 @@
       "approach": "A compact skill router points to purpose-specific Python scripts. The repository documents notebook runs, error handling, and supported agent integrations.",
       "outcome": "A reusable public skill with source, installation guidance, and examples.",
       "limitations": "Actual Kaggle operations need the user’s own credentials and appropriate competition permissions. This portfolio never submits jobs on a visitor’s behalf."
-    }
+    },
+    "image": "media/kaggle-run-skill-repository.png",
+    "imageKind": "repository"
   },
   "Nano-Swarm-Intelligence-Coronary-Clot-Simulator": {
     "name": "Nano-Swarm",
     "summary": "Guide a swarm through a simulated artery. Change the parameters and watch coordination emerge.",
     "category": "Simulations",
-    "tags": ["Three.js", "TypeScript", "Swarm systems"],
+    "tags": [
+      "Three.js",
+      "TypeScript",
+      "Swarm systems"
+    ],
     "featured": 10,
     "status": "live",
     "liveUrl": "demos/nano-swarm/index.html",
@@ -183,7 +235,9 @@
       "approach": "TypeScript separates deterministic simulation, rendering, guided playback, metrics, and exports. Three.js presents the pseudo-3D artery scene.",
       "outcome": "The original application is built from a pinned source revision and hosted alongside this portfolio.",
       "limitations": "Simplified educational visualization only: not a medical device, not patient-specific, and not predictive of treatment outcomes."
-    }
+    },
+    "image": "media/nano-swarm-intelligence-coronary-clot-simulator-repository.png",
+    "imageKind": "repository"
   },
   "Assembly-Language-Dry-Running-Tool-Project": {
     "name": "Assembly Dry Runner",
@@ -295,7 +349,11 @@
   "agentic-ai-megaproject-template": {
     "name": "Agentic Project Template",
     "category": "Tools",
-    "tags": ["Python", "AI agents", "Architecture"]
+    "tags": [
+      "Python",
+      "AI agents",
+      "Architecture"
+    ]
   },
   "ai-stack": {
     "name": "AI Stack",
@@ -313,6 +371,10 @@
     "name": "Behind this site",
     "category": "Tools",
     "summary": "The source of Hammad’s Lab: one project catalog, an interactive orbital homepage, a 3D world, and a browser desktop.",
-    "tags": ["React", "Three.js", "TypeScript"]
+    "tags": [
+      "React",
+      "Three.js",
+      "TypeScript"
+    ]
   }
 }
